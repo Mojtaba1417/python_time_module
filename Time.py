@@ -1,9 +1,9 @@
 import datetime as dt
 class Time:
-    def __init__(self,hour=10,minute=12,second=24):
-        self.__hour=hour
-        self.__minute=minute
-        self.__second=second
+    def __init__(self):
+        self.__hour=0
+        self.__minute=0
+        self.__second=0
         
     @property
     def hour(self):
@@ -66,8 +66,9 @@ class Time:
                 Beep(2000,500)    
 if __name__=="__main__":
     now=dt.datetime.now()
-    d=Time(hour=now.hour,minute=now.minute,second=now.second)
-    u=Time(hour=21,minute=58,second=32)
+    d=Time()
+    d.hour,d.minute,d.second=now.hour,now.minute,now.second
+    u=Time()
     while True:
         Time.set(d,u)
         print(next(d))

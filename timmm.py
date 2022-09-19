@@ -3,7 +3,8 @@ import datetime as dt
 import tkinter as tk
 from tkinter import messagebox
 now=dt.datetime.now()
-t=Time(now.hour,now.minute,now.second)
+t=Time()
+t.hour,t.minute,t.second=now.hour,now.minute,now.second
 def start():
     
     next(t)
