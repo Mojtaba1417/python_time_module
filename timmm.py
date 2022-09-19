@@ -31,7 +31,7 @@ def start():
 if __name__=="__main__":
     
     top=tk.Tk()
-    top.geometry("-%d+%d" % (0, 20))
+    top.geometry("-%d+%d" % (0, 30))
     top.title('ساعت')
     top.resizable(False,False)
     frTop=tk.Frame(master=top)

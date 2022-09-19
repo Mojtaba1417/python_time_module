@@ -34,8 +34,8 @@ class Time:
             print("Invalid number . ")
     second=property(getSecond,setSecond)
 
-    # def __str__(self):
-    #     return f"{self.hour:02}:{self.minute:02}:{self.second:02}"
+    def __str__(self):
+        return f"{self.hour:02}:{self.minute:02}:{self.second:02}"
 
     def __repr__(self):
         if self.hour<12:
